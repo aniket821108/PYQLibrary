@@ -1,0 +1,122 @@
+/* Merge content from both style.css and Styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Header styles from Styles.css */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fc0022;
+    padding: 20px;
+    color: #fff;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  /* Navigation styles from style.css */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0c0b0b;
+    padding: 10px 20px;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: rgb(255, 241, 241);
+    font-weight: bold;
+  }
+  
+  .nav-links li a:hover {
+    text-decoration: underline red;
+    transition: 0.2s;
+  }
+  
+  /* Dropdown styles */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    background-color: #e0ae08;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropbtn:hover {
+    background-color: #890535;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Department and semester styles */
+  .department {
+    margin-bottom: 20px;
+  }
+  
+  .semester {
+    margin-left: 20px;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+  }
+  
